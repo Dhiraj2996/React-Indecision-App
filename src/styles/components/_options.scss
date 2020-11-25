@@ -1,0 +1,45 @@
+.option {
+  border-bottom: 1px solid lighten($color: $light-blue, $amount: 10%);
+  display: flex;
+  justify-content: space-between;
+  padding: $m-size $m-size;
+}
+
+.option__text {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  word-break: break-all;
+}
+
+.add-option-error {
+  color: $off-white;
+  font-style: italic;
+  padding: 0 $m-size;
+  margin: $m-size 0 0 0;
+  font-size: $m-size;
+}
+.add-option {
+  display: flex;
+  flex-direction: column;
+  padding: $m-size;
+}
+.add-option__input {
+  flex-grow: 1;
+  background: $dark-blue;
+  border: none;
+  border-bottom: 0.3rem solid darken($color: $dark-blue, $amount: 10%);
+  // margin-right: $s-size;
+  margin: 0 0 $s-size 0;
+  color: $off-white;
+  padding: $s-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .add-option {
+    flex-direction: row;
+  }
+  .add-option__input {
+    margin: 0 $s-size 0 0;
+  }
+}
